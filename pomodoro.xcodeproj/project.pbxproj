@@ -11,6 +11,14 @@
 		F60561112717DBB0003F0E29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60561102717DBB0003F0E29 /* ContentView.swift */; };
 		F60561132717DBB2003F0E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60561122717DBB2003F0E29 /* Assets.xcassets */; };
 		F60561162717DBB2003F0E29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60561152717DBB2003F0E29 /* Preview Assets.xcassets */; };
+		F605611E2717DF08003F0E29 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605611D2717DF08003F0E29 /* BluetoothManager.swift */; };
+		F605612027181690003F0E29 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605611F27181690003F0E29 /* StatusBarController.swift */; };
+		F6D69CCA27193A85001CED47 /* CommandButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D69CC927193A85001CED47 /* CommandButton.swift */; };
+		F6D69CCD27193F92001CED47 /* Pomodoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D69CCC27193F92001CED47 /* Pomodoro.swift */; };
+		F6D69CD0271946E7001CED47 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D69CCF271946E7001CED47 /* Data.swift */; };
+		F6D69CD2271947CE001CED47 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D69CD1271947CE001CED47 /* Store.swift */; };
+		F6D69CD427194CDC001CED47 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D69CD327194CDC001CED47 /* Int.swift */; };
+		F6D69CD8271956CA001CED47 /* StatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D69CD7271956CA001CED47 /* StatusIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,15 @@
 		F60561122717DBB2003F0E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F60561152717DBB2003F0E29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F60561172717DBB2003F0E29 /* pomodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pomodoro.entitlements; sourceTree = "<group>"; };
+		F605611D2717DF08003F0E29 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		F605611F27181690003F0E29 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		F6056121271824B5003F0E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F6D69CC927193A85001CED47 /* CommandButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandButton.swift; sourceTree = "<group>"; };
+		F6D69CCC27193F92001CED47 /* Pomodoro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro.swift; sourceTree = "<group>"; };
+		F6D69CCF271946E7001CED47 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F6D69CD1271947CE001CED47 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		F6D69CD327194CDC001CED47 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		F6D69CD7271956CA001CED47 /* StatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +69,16 @@
 		F605610D2717DBB0003F0E29 /* pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				F6D69CCE271946D9001CED47 /* Extensions */,
+				F6D69CCB27193F86001CED47 /* Models */,
+				F6D69CC627193A6B001CED47 /* Views */,
+				F6056121271824B5003F0E29 /* Info.plist */,
+				F605611D2717DF08003F0E29 /* BluetoothManager.swift */,
 				F605610E2717DBB0003F0E29 /* pomodoroApp.swift */,
 				F60561102717DBB0003F0E29 /* ContentView.swift */,
 				F60561122717DBB2003F0E29 /* Assets.xcassets */,
 				F60561172717DBB2003F0E29 /* pomodoro.entitlements */,
+				F605611F27181690003F0E29 /* StatusBarController.swift */,
 				F60561142717DBB2003F0E29 /* Preview Content */,
 			);
 			path = pomodoro;
@@ -67,6 +90,33 @@
 				F60561152717DBB2003F0E29 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6D69CC627193A6B001CED47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6D69CC927193A85001CED47 /* CommandButton.swift */,
+				F6D69CD7271956CA001CED47 /* StatusIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6D69CCB27193F86001CED47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6D69CCC27193F92001CED47 /* Pomodoro.swift */,
+				F6D69CD1271947CE001CED47 /* Store.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6D69CCE271946D9001CED47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6D69CCF271946E7001CED47 /* Data.swift */,
+				F6D69CD327194CDC001CED47 /* Int.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D69CD0271946E7001CED47 /* Data.swift in Sources */,
+				F6D69CCA27193A85001CED47 /* CommandButton.swift in Sources */,
 				F60561112717DBB0003F0E29 /* ContentView.swift in Sources */,
+				F6D69CD427194CDC001CED47 /* Int.swift in Sources */,
+				F6D69CD2271947CE001CED47 /* Store.swift in Sources */,
+				F6D69CD8271956CA001CED47 /* StatusIndicator.swift in Sources */,
+				F605612027181690003F0E29 /* StatusBarController.swift in Sources */,
+				F605611E2717DF08003F0E29 /* BluetoothManager.swift in Sources */,
+				F6D69CCD27193F92001CED47 /* Pomodoro.swift in Sources */,
 				F605610F2717DBB0003F0E29 /* pomodoroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +334,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pomodoro/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connect to BLE to setup pomodoro";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Pomodoro BLE";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +365,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pomodoro/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connect to BLE to setup pomodoro";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Pomodoro BLE";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -7,8 +7,11 @@
 
 import Foundation
 
-public extension String {
+public extension Int {
   func timeFormatted() -> String {
-    self.padding(toLength: 2, withPad: "0", startingAt: 0)
+    let minutes = self / 60
+    let seconds = self % 60
+    
+    return String(format: "%02d:%02d", minutes, seconds)
   }
 }

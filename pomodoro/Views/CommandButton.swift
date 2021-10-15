@@ -7,27 +7,29 @@
 
 import SwiftUI
 
-struct Button: View {
+struct CommandButton: View {
   var onAction: () -> Void
   var text: String
   
-    var body: some View {
-      Button(action: {
-        self.onAction()
-      }) {
-        Text(text)
-          .font(.body)
-          .foregroundColor(.white)
-          .padding(.horizontal, 15)
-          .padding(.vertical, 5)
-          .background(Color(red: 0.0, green: 0.4823529411764706, blue: 1.0))
-          .cornerRadius(5)
-      }.buttonStyle(PlainButtonStyle())
-    }
+  var body: some View {
+    Button(action: {
+      self.onAction()
+    }) {
+      Text(text)
+        .font(.headline)
+        .foregroundColor(.white)
+        .padding(.horizontal, 50)
+        .padding(.vertical, 15)
+        .background(Color(red: 0.0, green: 0.4823529411764706, blue: 1.0))
+        .cornerRadius(5)
+    }.padding(8)
+      .buttonStyle(PlainButtonStyle())
+    
+  }
 }
 
 struct Button_Previews: PreviewProvider {
-    static var previews: some View {
-      Button(onAction: {}, text: "test")
-    }
+  static var previews: some View {
+    CommandButton(onAction: {}, text: "test")
+  }
 }
